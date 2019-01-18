@@ -1,0 +1,22 @@
+{
+    "debug" : {
+        "hits"   : false,
+        "digits" : false,
+        "tracks" : false
+    },
+
+    "events" : {
+    },
+
+    "tracks" : {
+    },
+
+    "digitClusters" : {
+    },
+
+    "trackFinding" : {
+    },
+
+    "trackFitting" : {
+    }
+}

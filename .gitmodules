@@ -1,0 +1,4 @@
+[submodule "TestBeamTracker/external/acts-core"]
+	path = TestBeamTracker/external/acts-core
+	url = https://gitlab.cern.ch/acts/acts-core.git
+	branch = release-0.08.00
