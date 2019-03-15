@@ -6,7 +6,7 @@
 namespace TestBeamTracker {
 //------------------------------------------------------------------------------
 
-std::normal_distribution<double> gauss(0., 1.);
+std::normal_distribution<long double> gauss(0., 1.);
 std::default_random_engine       generator(42);
 
 /////
@@ -72,8 +72,8 @@ std::vector<VariantTrackState> KalmanFilter::measuredTrackStates(EventReader & r
 
   for (uint iPlane=0; iPlane<EventReader::N_PLANES; ++iPlane) {
     for (uint iHit=0; iHit<reader.nHits[iPlane]; ++iHit) {
-      double sU = m_geometry->columnPitch;
-      double sV = m_geometry->rowPitch;
+     long double sU = m_geometry->columnPitch;
+     long double sV = m_geometry->rowPitch;
       ActsSymMatrixD<2> cov2D;
       cov2D << sU*sU, 0., 0., sV*sV;
       Acts::Vector2D localPos = m_geometry->localPos(
